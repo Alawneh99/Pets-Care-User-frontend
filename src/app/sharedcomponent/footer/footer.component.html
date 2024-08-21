@@ -1,0 +1,31 @@
+<div class="wrapper">   
+    <div class="content"></div>
+    <footer>
+        <div class="footer-container">
+            <h1 class="footer-logo">Pet-Care</h1>
+            <ul class="footer-nav">
+                <li><a routerLink="/">Home</a></li>
+                <li><a routerLink="/getallpets">Pets</a></li>
+                <li><a routerLink="/getallitems">Items</a></li>         
+                <li><a routerLink="/aboutus">About Us</a></li>
+                <li><a routerLink="/contact">Contact</a></li>
+                <li *ngIf="!isLoggedIn; else logoutFooterTemplate">
+                    <a routerLink="/signin">LogIn</a>
+                </li>
+                <ng-template #logoutFooterTemplate>
+                    <li>
+                        <a (click)="signOut()" routerLink="/">LogOut</a>
+                    </li>
+                </ng-template>
+            </ul>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-image-container">
+                <img src="../../../assets/footer-cat.png" alt="Cat Image" class="footer-image">
+            </div>
+        </div>
+    </footer>
+</div>

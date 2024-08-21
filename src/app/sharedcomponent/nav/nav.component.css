@@ -1,0 +1,53 @@
+/* Navbar specific styles */
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars,
+.navbar-scroll .navbar-brand {
+  color: #4f4f4f;
+}
+
+.navbar-scroll .nav-link:hover {
+  color: #1266f1;
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars,
+.navbar-scrolled .navbar-brand {
+  color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #d1c630; /* Change this to your desired background color */
+  width: 100%;
+  margin-bottom: 20px; /* Add margin-bottom to create space below the navbar */
+}
+
+/* Optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 1.2em; /* Increase the font size */
+  padding: 10px 20px; /* Increase the padding */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.navbar-nav.ms-auto {
+  margin-right: 20px; /* Adjust the margin to shift the links to the left */
+}
+
+.navbar-brand {
+  margin-right: 20px; /* Adjust the margin to position the logo */
+}
+
+/* Ensure the body has enough padding to avoid content overlap with navbar */
+body {
+  padding-top: 80px; /* Adjust this value to match the height of your navbar */
+  background-color: #eee;
+}
+

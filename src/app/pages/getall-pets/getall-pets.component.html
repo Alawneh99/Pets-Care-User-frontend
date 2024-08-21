@@ -1,0 +1,18 @@
+<ngx-spinner></ngx-spinner>
+<div class="gallery-container" *ngIf="pets.length">
+  <h1 class="gallery-title">Our Lovely Pets</h1>
+  <div class="gallery">
+    <div class="pet-item" *ngFor="let pet of pets">
+      <img [src]="pet.image" [alt]="pet.nickName" class="pet-image">
+      <div class="pet-info">
+        <h3>{{ pet.nickName }}</h3>
+        <p><strong>Gender:</strong> {{ getGenderName(pet.gender) }}</p>
+        <p><strong>Type:</strong> {{ getPetTypeName(pet.petType) }}</p>
+        <p><strong>Age:</strong> {{ pet.age }} years</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="!pets.length" class="no-pets">
+  <p>No pets found.</p>
+</div>

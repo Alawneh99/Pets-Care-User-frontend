@@ -1,0 +1,95 @@
+/* General styles for the footer */
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 10px 0; 
+  text-align: center;
+  margin-top: 0; 
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px; 
+  position: relative; /* Make it relative to position the cat image */
+}
+
+.footer-logo {
+  font-size: 24px;
+  margin-bottom: 10px; 
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px; 
+}
+
+.footer-nav li {
+  display: inline;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  margin-bottom: 10px; 
+}
+
+.footer-social a {
+  color: #b2b2b2;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 5px; 
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #b2b2b2;
+  margin: 0;
+}
+
+.footer-copy a {
+  color: #b2b2b2;
+  text-decoration: none;
+}
+
+.footer-copy a:hover {
+  color: #fff;
+}
+
+.footer-copy i {
+  color: red;
+}
+
+/* Styles for the footer image */
+.footer-image-container {
+  position: absolute;
+  top: -20px; /* Adjust this value to position the image correctly */
+  right: 20px; /* Adjust this value for horizontal positioning */
+}
+
+.footer-image {
+  height: 150px; /* Increase the size of the image */
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-image:hover {
+  transform: translateY(-10px);
+}

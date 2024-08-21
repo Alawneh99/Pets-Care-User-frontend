@@ -1,0 +1,60 @@
+.pet-tips {
+    margin-top: 20px; /* Adjust the top margin */
+    margin-bottom: 20px; /* Reduce the bottom margin */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pet-tips h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .custom-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    background-color: #fff; /* Default background color */
+  }
+  
+  .custom-card:nth-child(odd) {
+    background-color: #e3f2fd; /* Light blue for odd cards */
+  }
+  
+  .custom-card:nth-child(even) {
+    background-color: #fce4ec; /* Light pink for even cards */
+  }
+  
+  .custom-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  .card-title a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  
+  .card-title a:hover {
+    color: #0056b3;
+  }
+  
+  .card-text {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  

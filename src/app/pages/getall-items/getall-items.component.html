@@ -1,0 +1,22 @@
+<ngx-spinner>
+</ngx-spinner>
+<div class="items-container" *ngIf="items.length">
+  <div class="item-card" *ngFor="let item of items">
+    <div class="deal-tag" *ngIf="item.isHaveDiscount">Deal</div>
+    <img [src]="item.image" [alt]="item.name" class="item-image" />
+    <h3>{{ item.name }}</h3>
+    <p class="description">{{ item.description }}</p>
+    <div class="rating">
+      <span class="stars">{{ item.discountAmount }}</span>
+      <span class="reviews">{{ item.discountType }}</span>
+    </div>
+    <div class="price">
+      <span class="current-price">${{ item.price.toFixed(2) }}</span>
+      <span class="original-price" *ngIf="item.isHaveDiscount">${{ (item.price + item.discountAmount).toFixed(2) }}</span>
+    </div>
+    <div class="quantity">Quantity: {{ item.quantity }}</div>
+  </div>
+</div>
+<div *ngIf="!items.length" class="no-items">
+  <p>No items found.</p>
+</div>

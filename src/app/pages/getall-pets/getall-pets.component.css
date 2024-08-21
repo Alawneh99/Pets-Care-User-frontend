@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.gallery-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-title {
+    font-size: 48px; /* Increased font size */
+    margin-bottom: 20px;
+    color: #ff6347; /* Initial color */
+    font-family: 'Pacifico', cursive; /* Use a more outstanding font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add some shadow for effect */
+    animation: colorchange 5s infinite; /* Add a color change animation */
+}
+
+/* Animation for changing colors */
+@keyframes colorchange {
+    0% { color: #ff6347; }
+    25% { color: #ffa500; }
+    50% { color: #32cd32; }
+    75% { color: #1e90ff; }
+    100% { color: #ff6347; }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pet-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 0 1 calc(20% - 10px); /* Adjust width to fit 5 cards in a row */
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pet-item:hover {
+    transform: translateY(-10px);
+}
+
+.pet-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.pet-info {
+    text-align: left;
+}
+
+.pet-info h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #555;
+}
+
+.pet-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #777;
+}

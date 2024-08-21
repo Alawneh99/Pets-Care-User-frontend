@@ -1,0 +1,120 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  background: #000; /* Fallback color */
+  color: #fff;
+  overflow: hidden;
+}
+
+.video-background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ensures the video background stays within the viewport */
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px; /* Adjust padding if needed */
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-lg-4, .col-lg-8 {
+  padding: 15px;
+}
+
+.contact-info, .contact-form {
+  background-color: rgba(255, 255, 255, 0.1); /* More transparent background */
+  padding: 20px;
+  border-radius: 5px;
+  color: #fff; /* White text */
+  font-size: 1.5em; /* Increase font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for better contrast */
+}
+
+.contact-info h3, .contact-form h3 {
+  margin-bottom: 20px;
+  font-size: 1.8em; /* Increase heading size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for better contrast */
+}
+
+.contact-info p, .contact-info i, .contact-form .form-group label, .contact-form .form-group input, .contact-form .form-group textarea, .contact-info h3, .contact-form h3 {
+  font-size: 1.2em; /* Increase font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for better contrast */
+}
+
+.contact-info p, .contact-form .form-group input, .contact-form .form-group textarea {
+  color: #fff; /* White text */
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group input, .contact-form .form-group textarea {
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background for inputs */
+  border: 1px solid #fff; /* White border */
+  padding: 12px; /* Increase padding */
+  border-radius: 5px;
+  color: #fff; /* Change input text color */
+}
+
+.contact-form .form-group input::placeholder, .contact-form .form-group textarea::placeholder {
+  color: #ccc; /* Change placeholder text color */
+}
+
+.contact-form .form-group textarea {
+  resize: none;
+}
+
+.contact-form .btn {
+  background-color: #007bff;
+  border: none;
+  padding: 12px 24px; /* Increase button padding */
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em; /* Increase button font size */
+  text-shadow: none; /* Remove text shadow from button text */
+}
+
+.contact-form .btn:hover {
+  background-color: #0056b3;
+}

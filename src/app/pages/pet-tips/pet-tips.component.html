@@ -1,0 +1,17 @@
+<div class="pet-tips">
+    <h2>Pet Care News</h2>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4" *ngFor="let tip of tips">
+        <div class="card custom-card">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a [href]="tip.link" target="_blank">{{ tip.title }}</a>
+            </h5>
+            <!-- Conditionally render the description only if it does not contain the title link -->
+            <p class="card-text" *ngIf="!tip.description.includes(tip.link)" [innerHtml]="tip.description"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

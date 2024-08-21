@@ -1,0 +1,81 @@
+.custom-rounded {
+    border-radius: 30px; /* Adjust this value to increase the roundness */
+    width: 100%;
+    height: 400px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    --bs-card-border-width: 0;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  
+  .image-container img {
+    border-radius: 30px; /* Adjust this value to increase the roundness */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* To ensure the image covers the container */
+    border: none !important; /* Remove any borders */
+    margin: 0; /* Remove any margins */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 30px; /* Match the image border-radius */
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.7); /* Background for better readability */
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .hover-link {
+    cursor: pointer; /* Add this to change the cursor to a pointing hand */
+  }
+  
+  .card-body {
+    text-align: center; /* Center-align the text */
+    font-family: 'Arial', sans-serif; /* Change the font family to match your page */
+    padding: 15px; /* Add padding for better spacing */
+    
+  }
+  
+  .card-title {
+    font-size: 1.5em; /* Increase the font size for the title */
+    font-weight: bold; /* Make the title bold */
+    color: #2c3e50; /* Change the color to a darker shade for better readability */
+    margin-bottom: 10px; /* Add space below the title */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for effect */
+  }
+  
+  .card-text {
+    font-size: 1em; /* Adjust the font size for the text */
+    color: #34495e; /* Change the color to a softer tone */
+    line-height: 1.5; /* Increase the line height for readability */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for better contrast */
+    padding: 10px; /* Add padding for better spacing */
+    border-radius: 10px; /* Add a slight border radius for a softer look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  }
+  
